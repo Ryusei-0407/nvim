@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 local keymap = vim.api.nvim_set_keymap
 
 keymap("", "<Space>", "<Nop>", opts)
@@ -21,7 +19,7 @@ keymap("n", "<leader>f", "<cmd>Telescope find_files<CR>", opts)
 keymap("n", "<C-t>", "<cmd>Telescope live_grep<CR>", opts)
 
 -- nvim-tree
-keymap("n", "<C-e>", ":NvimTreeToggle<CR>", opts)
+-- keymap("n", "<C-e>", ":NvimTreeToggle<CR>", opts)
 
 -- winresizer
 vim.g.winresizer_start_key = "<C-s>"
