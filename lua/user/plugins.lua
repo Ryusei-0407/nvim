@@ -1,10 +1,10 @@
-local status_ok, paq = pcall(require, "paq")
+local status_ok, jetpack = pcall(require, "jetpack")
 if not status_ok then
 	return
 end
 
-paq {
-    "savq/paq-nvim";
+jetpack.setup {
+    {"tani/vim-jetpack", opt = 1};
 	"nvim-lua/popup.nvim";
 	"nvim-lua/plenary.nvim";
 	"kyazdani42/nvim-web-devicons";
