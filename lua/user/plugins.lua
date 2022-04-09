@@ -37,16 +37,16 @@ paq {
 	"nvim-telescope/telescope.nvim";
 	"nvim-telescope/telescope-media-files.nvim";
 	-- faster option plugins
-	use({
+	{
 		"lewis6991/impatient.nvim",
 		config = { compile_path = vim.fn.stdpath("config") .. "/lua/packer_compiled.lua" },
-	})
-	use({
+	},
+	{
 		"PHSix/faster.nvim",
 		event = { "VimEnter *" },
 		config = function()
 			vim.api.nvim_set_keymap("n", "j", "<Plug>(faster_move_gj)", { noremap = false, silent = true })
 			vim.api.nvim_set_keymap("n", "k", "<Plug>(faster_move_gk)", { noremap = false, silent = true })
 		end,
-	})
+	}
 }
