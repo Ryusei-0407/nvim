@@ -5,18 +5,12 @@ end
 
 configs.setup({
 	ensure_installed = "maintained",
-	sync_install = true,
+	sync_install = false,
 	ignore_install = { "" },
 	highlight = {
 		enable = true,
 		disable = { "" },
 		additional_vim_regex_highlighting = true,
 	},
-	indent = {
-		enable = true,
-	},
-	yati = { enable = true },
-	context_commentstring = {
-		enable = true,
-	},
+	indent = { enable = true, disable = { "yaml" } },
 })
