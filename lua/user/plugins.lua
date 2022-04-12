@@ -75,6 +75,11 @@ return packer.startup(function(use)
 	use("github/copilot.vim")
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-telescope/telescope-media-files.nvim")
+    	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate",
+	})
+	use({ "yioneko/nvim-yati", requires = "nvim-treesitter/nvim-treesitter" })
     -- faster option plugins
 	use({
 		"lewis6991/impatient.nvim",
