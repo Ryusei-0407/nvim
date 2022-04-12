@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup({
-	sync_install = false,
+	sync_install = true,
 	ignore_install = { "" },
 	highlight = {
 		enable = true,
