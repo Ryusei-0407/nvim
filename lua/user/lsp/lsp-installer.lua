@@ -32,6 +32,7 @@ lsp_installer.on_server_ready(function(server)
 
 	if server.name == "rust_analyzer" then
 		require("user.lsp.settings.rust_analyzer")
+		requure("rust-tools").setup({})
 	end
 
 	if server.name == "tsserver" then
